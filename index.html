@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-min.js"></script>
+    <script src="script.js"></script>
+    <title>Finance accounting</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main_wrapper">
+        <h1 class="gradient">MY FINANCE ACCOUNTING</h1>
+        <div class="wrapper">
+          <div class="type">
+            <p>Where was spend:</p>
+            <input
+              class="newInput"
+              onkeyup="btnAdd()"
+              type="text"
+              id="newText"
+              placeholder="Type your text..."
+            />
+          </div>
+          <div class="type">
+            <p>When was spend:</p>
+            <input class="newInput" id="newDate" type="date" />
+          </div>
+          <div class="type">
+            <p>How much was spend:</p>
+            <input
+              class="newInput"
+              onkeyup="btnAdd()"
+              type="number"
+              id="newSum"
+              placeholder="Type your sum..."
+            />
+          </div>
+          <div class="total">
+            <p id="totalSum" class="sum">Total:</p>
+            <button class="buttonAdd" onclick="clickAdd()">
+              &#10224; ADD &#10224;
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="elems_wrapper" id="content_page"></div>
+    </div>
+  </body>
+</html>

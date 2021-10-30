@@ -1,0 +1,21 @@
+{
+  "name": "finance-accounting-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Finance-Accounting"
+  },
+  "author": "Nikita-Koval",
+  "license": "ISC"
+}

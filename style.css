@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: arial;
+}
+
+body {
+    background: url(img/background.jpg);
+}
+
+p {
+    font-weight: 550;
+}
+
+.gradient {
+    color: rgb(49, 47, 47);
+    padding: 0.1em;
+    border-radius: 5px;
+    background-size: 400% 400%; 
+    background-image: linear-gradient(-45deg, rgb(193, 233, 211), #c8ffae, #fffd86, #9cf0c9);
+    animation: gradient 13s ease infinite;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+.main_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    background: url(img/head.jpg);
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-bottom: 0.1em;
+}
+.wrapper {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.newInput {
+    height: 25px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.newInput:active,
+.newInput:focus {
+    outline: none;
+    box-shadow: 0px 2px 35px black;
+}
+
+.buttonAdd {
+    display: block;
+    max-height: 30px;
+    width: 100%;
+    border: none;
+    background-color: rgb(173, 182, 218);
+    color: rgb(61, 53, 53);
+    cursor: pointer;
+    height: 30px;
+    font-weight: 900;
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
+.type {
+    margin-right: 0.6em;
+    width: 20%;
+}
+
+.elems_wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.task_container {
+    width: 95%;
+    min-width: 200px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgba(221, 129, 148, 0.473);
+    border-radius: 20px;
+}
+
+.task_container:nth-child(odd) {
+    background: #e7e0ffc7;
+}
+
+.sum {
+    min-width: 20%;
+    height: 25px;
+    margin: 0 0 5px 0;
+    padding: 0.3em 0 0 0.7em;
+    background: white;
+}
+
+.total {
+    width: 20%;
+}
+
+.textBlock,
+.textBlockSum,
+.dateDiv {
+    min-width: 100px;
+    word-wrap: break-word;
+    padding: 0.5em;
+    margin: 0.4em;
+    border-radius: 20px;
+    background: rgb(135, 231, 106);
+}
+
+.dateDiv {
+    background-color: rgb(241, 223, 141);
+}
+
+.textBlockArea {
+    width: 45%;
+    max-width: 250px;
+    margin: 0.3em;
+}
+
+.textBlockSum {
+    background: rgb(209, 69, 69);
+}
+
+.imgCont {
+    border: 1px solid black;
+    padding: 0.4em;
+    border-radius: 15px;
+    margin-left: 0.7em;
+}
+
+.editPng {
+    margin-left: 0.2em;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} /* removes arrows from input */
+
+::-webkit-scrollbar {
+    width: 0;
+} /* removes scroll from text container */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    .main_wrapper {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .wrapper {
+        justify-content: center;
+        max-width: 350px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .buttonAdd {
+        width: 94%;
+        align-self: center;
+        margin: 10px;
+    }
+
+    .sum {
+        margin-top: 10px;
+    }
+    .total {
+        width: 100%;
+        align-self: center;
+    }
+
+    .elems_wrapper {
+    height: 135px;
+    overflow: scroll;
+    }
+
+    .type {
+        width: 95%;
+        margin-left: 10px;
+        text-align: center;
+    }
+    input {
+        width: 90%;
+    }
+
+    .textBlockArea,
+    .textBlock,
+    .dateDiv {
+        width: 50%;
+        margin: 1px;
+    }
+
+    .imgCont {
+        width: 50%;
+        text-align: center;
+        margin: 0 0 0 0.1em;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
