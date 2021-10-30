@@ -1,6 +1,6 @@
 # Finance-Accounting-
 
-1. For correct work need to type on Terminal : *npm install, *npm i express, *npm i cors, *npm i mongoose
+1. For correct work need to type on Terminal : *npm install
 
 2. Type "node app" on Terminal
 
